@@ -284,9 +284,9 @@ position: absolute;
     height: 5px;
     top: 35px;
     transform: translateY(-50%);
-    left: 10px;
+    left: 50%;
 }
-html[dir=ltr] .menu-head li a.active::before{ left: 0px;}
+/* html[dir=ltr] .menu-head li a.active::before{ left: 0px;} */
 .menu ul {
     display: flex;
     align-items: center;
@@ -1193,6 +1193,29 @@ html[dir=ltr] .county-code {right: 40px;}
 html[dir=ltr] .rechage-single-box{ direction: rtl;}
 @media (max-width: 375px) {
   html[dir=ltr] .amout-flex span {font-size: 13px;}
+}
+ .or{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'z-bold';
+}
+.rechag-text p{
+ font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.recharge-content .quick-phone .form-group label {
+    margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+.recharge-page .banner{
+  display: none;
+}
+.recharge-page .or{display: none};
 }
 
 
