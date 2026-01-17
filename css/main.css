@@ -13,6 +13,7 @@ background: linear-gradient(90deg,
  rgba(53, 0, 137, 1) 32%, 
  rgba(54, 4, 150, 1) 55%,
  rgba(85, 3, 214, 1) 75%); */
+ /* html[dir=ltr]  */
   @font-face {
     font-family: 'z-reg';
     src: url('../fonts/29LTZawi-Regular.woff2') format('woff2'),
@@ -137,7 +138,7 @@ a,
   position: fixed;
   z-index: 999999;
   top: 0;
-  background-color: var(--white-color);
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 55px;
@@ -285,6 +286,7 @@ position: absolute;
     transform: translateY(-50%);
     left: 10px;
 }
+html[dir=ltr] .menu-head li a.active::before{ left: 0px;}
 .menu ul {
     display: flex;
     align-items: center;
@@ -332,13 +334,13 @@ a.lang-head{     direction: ltr;
     position: relative
 }
 .ant-dropdown .fa-angle-down {
-    
-    font-size: 9px;
-    margin-right: -3px;
+ font-size: 13px;
+    margin-right: 2px;
 }
 
 .bot-menu {
     left: auto;
+    padding: 0;
     right: 20px;
     top: 28px;
     display: none;
@@ -370,10 +372,11 @@ a.lang-head{     direction: ltr;
     transform: translateX(50%);
 }
 
-.dropdown-menu {
-    padding: 2px 19px;
-}
 
+.ant-dropdown a:hover{
+  color: var(--main-color);
+}
+.bot-menu li{padding: 4px 10px;}
 @media (min-width:768px) {
     .bot-menu {
         display: block;
@@ -391,9 +394,8 @@ a.lang-head{     direction: ltr;
 
 .bot-menu>li>a {
     color: #666666;
-    padding: 8px 5px;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
 
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
@@ -410,6 +412,8 @@ a.lang-head{     direction: ltr;
     text-decoration: none;
     background-color: #ffffff;
 }
+.ant-dropdown .dropdown-toggle::after{display: none;}
+.ant-dropdown .fa-circle-user:before,.ant-dropdown .fa-user-circle:before {font-size: 22px;margin-inline-end: 5px;}
 
 /* Home-section */
 .home-section{padding-top: 80px;}
@@ -1011,6 +1015,7 @@ align-items: center;}
   .menu-head{display: none;}
   a.lang-head{display: none;}
   .button-head .log{display: none;}
+  .ant-dropdown{display: none;}
   .logo-head{order: 2;}
   .side-menu{order: 1;}
   .top-head {
@@ -1182,6 +1187,13 @@ footer {
 }
 }
 
+html[dir=ltr] a.lang-head { direction: rtl;}
+html[dir=ltr] .quick-phone .form-control {text-align: right;}
+html[dir=ltr] .county-code {right: 40px;}
+html[dir=ltr] .rechage-single-box{ direction: rtl;}
+@media (max-width: 375px) {
+  html[dir=ltr] .amout-flex span {font-size: 13px;}
+}
 
 
 
