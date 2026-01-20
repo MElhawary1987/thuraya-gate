@@ -46,5 +46,18 @@ $(document).ready(function () {
         .val(newValue - 1);
     }
   });
+  var $mediaElements = $('.course');
+$('.tabs-sec .tab-a').click(function (e) {
+    e.preventDefault();
+    var filterVal = $(this).data('filter');
+    $(".tabs-sec .tab-a").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    $mediaElements.removeClass("active").filter('.' + filterVal).addClass("active");
+    // if (filterVal === 'one') {
+    //   $mediaElements.show();
+    // } else {
+        
+    // }
+});
 
 });

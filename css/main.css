@@ -507,13 +507,12 @@ color: var(--sec-color);
 .quick-Home-title{
   display: flex;
     align-items: center;
-        margin-top: 80px;
 }
 .quick-Home-title img{}
 .quick-Home-title p{
       margin-bottom: 0;
     margin-inline-start: 15px;
-    font-size: 35px;
+    font-size:27px;
     font-weight: 900;
     color: var(--text-color);
 }
@@ -605,7 +604,6 @@ color: var(--sec-color);
 .recharge-Home-title{
   display: flex;
     align-items: center;
-    margin-top: 80px;
 }
 .rechage-single-box{
   height: 125px;
@@ -629,7 +627,7 @@ position: relative;
 
   margin-bottom: 0;
     margin-inline-start: 15px;
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 900;
     color: var(--text-color);
 }
@@ -1038,19 +1036,15 @@ a.button-home {
     font-weight: 900;
 }
 .quick-Home-title p,.recharge-Home-title p {
-    font-size: 25px;
+    font-size: 19px;
 }
-.quick-Home-title {
-    margin-top: 60px;
-}
+
 .quick-Home-title img,.recharge-Home-title img{
     height: 30px;
 }
 .quick-phone .form-control {
     height: 65px;}
-    .recharge-Home-title {
-    margin-top: 65px;
-}
+
 .county-code {
     bottom: -20px;
 }
@@ -1085,14 +1079,15 @@ footer {
 }
 @media (max-width: 480px) {
   .banner{margin-bottom: 15px;}
-      .quick-Home-title {
-        margin-top: 35px;
-    }
+
     .quick-phone .form-group label {
     margin-bottom: 15px;
     font-size: 16px;
     margin-top: 24px;
 }
+.tab-ul li a {
+
+    padding: 15px 20px;}
     .quick-phone .form-control {
         height: 55px;
         margin-bottom: 26px;
@@ -1112,9 +1107,7 @@ footer {
     height: 48px;
     font-size: 18px;
 }
-    .recharge-Home-title {
-        margin-top: 45px;
-    }
+
     .recharge-boxs-size {
     height: 70px;
     width: 100%;
@@ -1223,7 +1216,63 @@ html[dir=ltr] .menu-head li a.active::before{
 }
 .recharge-page .or{display: none};
 }
+.tab-ul li a {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius: 0;
+    background-color: transparent;
 
+    /* font-size: 17px; */
+    border: 1px solid var(--text-color);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.tab-ul .tab-a:hover{
+border-color: var(--main-color);
+background-color: #EEEEEE;
+border-color: #EEEEEE;
+} 
+.tab-ul .tab-a.active {
+border-color: var(--main-color);
+background-color: #EEEEEE;
+border-color: #EEEEEE;
+}
+.tab-ul .tab-a.active .recharge-Home-title p{
+  color: var(--main-color);
+}
+.tab-ul li{
+  outline: none;
+  margin-right: 15px;
+}
+.tab-ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course{display: none;}
+.course.active{display: block;}
+.tabs-sec{margin-top: 80px;}
+.quick-phone{margin-bottom: 80px;}
+@media (max-width: 480px) {
+
+.tab-ul li a {
+
+    padding: 15px 20px;}
+    .tab-ul {
+
+    flex-direction: column;
+}
+.tab-ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+}
 
 
 
