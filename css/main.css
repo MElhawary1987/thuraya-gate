@@ -834,17 +834,22 @@ border-color: var(--main-color);
 }
 .payment-block{}
 .payment-flex{
-display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 35px;
-    margin-top: 30px;
+
     width: 55%;
     border: 1px solid #EEEEEE;
     padding: 30px 25px;
 }
-
-.pay-total{width: 50%;}
+.pay-offer{width: 50%;margin-bottom: 29px;}
+.pay-offer p{width: 85%;
+    font-size: 16px;
+    font-family: 'z-bold';}
+.pay-of-flex{
+  display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+}
+.pay-total{width: 100%;}
 .pay-total>p{
   font-size: 20px;
  font-family: 'z-extra';}
@@ -883,7 +888,7 @@ display: flex;
         .pay-method p{
           font-size: 16px;
         }
-        .pay-method .form-control{
+        .pay-method .form-control ,.pay-offer .form-control{
           -webkit-transition: 0.5s ease;
     -o-transition: 0.5s ease;
 transition: 0.5s ease;
@@ -896,7 +901,7 @@ transition: 0.5s ease;
     font-family: 'z-bold';
     font-size: 20px;
         }
-        .pay-method .form-control:focus{
+        .pay-method .form-control:focus, .pay-offer .form-control:focus{
   border-color: var(--main-color);
 }
   .pay-method  .form-control::-webkit-input-placeholder {
@@ -914,7 +919,7 @@ transition: 0.5s ease;
        font-family: "z-reg";
     
   }
-  .pay-method .form-control::placeholder {
+  .pay-method .form-control::placeholder ,.pay-offer .form-control::placeholder{
     color: #A1A1A1;
       font-size: 14px;
       font-family: "z-reg";
@@ -941,6 +946,14 @@ transition: 0.5s ease;
     height: 40px;
     font-size: 18px;
 
+}
+.one .payment-flex{
+      display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.one .pay-total{
+      width: 50%;
 }
 /* End payment-home-section */
 /* footer */
@@ -1271,6 +1284,21 @@ border-color: #EEEEEE;
 .tab-ul li {
     margin-right: 0;
     margin-bottom: 15px;
+}
+}
+@media (max-width: 768px) {
+  .pay-of-flex {
+    flex-direction: column;
+}
+.pay-offer {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.two .pay-total{
+        margin-top: 25px;
+}
+.one .pay-total {
+    width: 100%;
 }
 }
 
