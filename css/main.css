@@ -839,7 +839,7 @@ border-color: var(--main-color);
     border: 1px solid #EEEEEE;
     padding: 30px 25px;
 }
-.pay-offer{width: 50%;margin-bottom: 29px;}
+.pay-offer{}
 .pay-offer p{width: 85%;
     font-size: 16px;
     font-family: 'z-bold';}
@@ -952,9 +952,9 @@ transition: 0.5s ease;
     gap: 30px;
     align-items: center;
 }
-.one .pay-total{
+/* .one .pay-total{
       width: 50%;
-}
+} */
 /* End payment-home-section */
 /* footer */
 footer{
@@ -1015,6 +1015,10 @@ align-items: center;}
 }
 .copy-flex span{
   font-family: 'z-bold';
+}
+.payment-block {
+    display: flex;
+    gap: 30px;
 }
 /* footer */
 @media (max-width: 1024px) {
